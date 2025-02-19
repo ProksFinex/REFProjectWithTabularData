@@ -4,6 +4,7 @@
   "description": "UiDemo process automated using the REF template a local excel file for a input data",
   "main": "Main.xaml",
   "dependencies": {
+    "UiPath.Credentials.Activities": "[2.1.0]",
     "UiPath.Excel.Activities": "[2.24.3]",
     "UiPath.System.Activities": "[24.10.6]",
     "UiPath.Testing.Activities": "[24.10.3]",
