@@ -99,7 +99,7 @@
       <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
     </scg:List>
   </TextExpression.ReferencesForImplementation>
-  <Sequence sap2010:Annotation.AnnotationText="Open UiDemo desktop app and login using the credential stored in Orchestrator.&#xA;&#xA;Pre-condition: none.&#xA;&#xA;Post-actions: UiDemo app is ready to be used." DisplayName="UiDemo_Open" sap:VirtualizedContainerService.HintSize="1462,1438" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence sap2010:Annotation.AnnotationText="Open UiDemo desktop app and login using the credential stored in Orchestrator.&#xA;&#xA;Pre-condition: none.&#xA;&#xA;Post-actions: UiDemo app is ready to be used." DisplayName="UiDemo_Open" sap:VirtualizedContainerService.HintSize="986,1474" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="x:String" Name="Username" />
       <Variable x:TypeArguments="ss:SecureString" Name="Password" />
@@ -111,14 +111,14 @@
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
     <ui:LogMessage DisplayName="Log Message Workflow Start" sap:VirtualizedContainerService.HintSize="450,173" sap2010:WorkflowViewState.IdRef="LogMessage_1" Message="[String.Format(&quot;Opening UiDemo from {0} with the credential named {1}&quot;, in_UiDemoAppPath, in_CredentialName)]" />
-    <p:GetSecureCredential CredentialType="Generic" DisplayName="GetSecureCredential for UiDemo" sap:VirtualizedContainerService.HintSize="334,80" sap2010:WorkflowViewState.IdRef="GetSecureCredential_1" Password="[Password]" PersistanceType="Enterprise" Target="[in_CredentialName]" Username="[Username]" />
-    <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Never" DisplayName="UiDemo" sap:VirtualizedContainerService.HintSize="450,1058" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" OpenMode="Always" ScopeGuid="b478247b-3cfb-408c-b34b-9e932017a1f6" Version="V1">
+    <p:GetSecureCredential CredentialType="Generic" DisplayName="GetSecureCredential for UiDemo" sap:VirtualizedContainerService.HintSize="450,112" sap2010:WorkflowViewState.IdRef="GetSecureCredential_1" Password="[Password]" PersistanceType="Enterprise" Target="[in_CredentialName]" Username="[Username]" />
+    <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Never" DisplayName="UiDemo" sap:VirtualizedContainerService.HintSize="450,1094" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" OpenMode="Always" ScopeGuid="b478247b-3cfb-408c-b34b-9e932017a1f6" Version="V1">
       <uix:NApplicationCard.Body>
         <ActivityAction x:TypeArguments="x:Object">
           <ActivityAction.Argument>
             <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
           </ActivityAction.Argument>
-          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="416,744" sap2010:WorkflowViewState.IdRef="Sequence_3">
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="416,780" sap2010:WorkflowViewState.IdRef="Sequence_3">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -146,16 +146,26 @@
                 </uix:TargetAnchorable>
               </uix:NTypeInto.Target>
             </uix:NTypeInto>
-            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Log In'" sap:VirtualizedContainerService.HintSize="382,182" sap2010:WorkflowViewState.IdRef="NClick_1" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="b478247b-3cfb-408c-b34b-9e932017a1f6" Version="V1">
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Log In'" sap:VirtualizedContainerService.HintSize="382,218" sap2010:WorkflowViewState.IdRef="NClick_1" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="b478247b-3cfb-408c-b34b-9e932017a1f6" Version="V1">
               <uix:NClick.Target>
-                <uix:TargetAnchorable DesignTimeRectangle="99, 192, 75, 20" DesignTimeScaleFactor="1" ElementType="Button" FullSelectorArgument="&lt;ctrl name='Log In' role='push button' /&gt;" FuzzySelectorArgument="&lt;ctrl name='Log In' role='push button' automationid='' check:text='Log In' /&gt;" Guid="ba61544b-e09a-4220-bf49-3203284cb408" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAGIAAAAdCAYAAABR0bkaAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAFqSURBVGhD7ZpBqoMwEIaDeB83XsaVV/AGwsN7WOoxBM/gWvQs80yMGuNoaWniWGbgg5oxtvxfjVkogItEsQgitYjIsoy5gLk2Itq2hWEYGA/IrA9FYBMYd7AIIrAIIrAIIrAIIrAIIlwsooMyCSAuGqTniL6GPAohrZDehbAIIrAIIhAX0UOdRyCE0CDnqmCN/t/jPGhbRFdCIsbjp3kd/6IIi5A9AUFcQDOPqdCM87WEMK30nFncuyLG8IMYikaO6WuEKVT2XIeQFdHXOURLOCtdmSxy5OddYK+WHlSE9RvkGPLdLiErAg15RAlS49M/d3PHSD4SYZ2PjTmGtIhdyCO2iHVZ0rCIT3CwNL0KkUVgHIuYetjD2g7RnD/Nef9hzSJ0cFvW8O0+Eo4KzeirbehJiCzCEzJEzzueb/BjIpDl7CbcW8RmWZrY7aJuwo/dEfflUAS/xeGP07c4GP/MtYjgurZYBIkC+AcsPl1uwnLsXQAAAABJRU5ErkJggg==" InformativeScreenshot="b63ccc697ae2a1e5246f23feda8c9018.png" ScopeSelectorArgument="&lt;wnd app='uidemo.exe' cls='HwndWrapper*' title='UiDemo' /&gt;" SearchSteps="Selector, FuzzySelector, Image">
+                <uix:TargetAnchorable CVScreenId="fba6f470-3df7-46d9-88d5-20b80d9fe95a" ContentHash="pq8GZZpqWEi1zmJ8kI6s3w" CvElementArea="98, 191, 77, 22" CvTextArea="119, 196, 34, 15" CvTextArgument="Log In" CvType="Button" DesignTimeRectangle="120, 194, 33, 16" DesignTimeScaleFactor="1" ElementType="Text" FuzzySelectorArgument="&lt;ctrl name='Log In' role='push button' /&gt;&lt;ctrl role='text' automationid='' /&gt;" Guid="ccc39469-4ed7-4e03-9c6c-fada8f14de28" InformativeScreenshot="f8fed90747ab67635ecf7a1b32933160.png" Reference="txzBAhbicUedfG1RFohs0w/HBylUYfQnUSO7iVb5g3R6A" ScopeSelectorArgument="&lt;wnd app='uidemo.exe' cls='HwndWrapper*' title='UiDemo' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive">
                   <uix:TargetAnchorable.Anchors>
                     <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
-                      <uix:Target DesignTimeRectangle="120, 194, 33, 16" ElementType="Text" FullSelectorArgument="&lt;ctrl name='Log In' role='push button' /&gt;&lt;ctrl name='Log In' role='text' /&gt;" FuzzySelectorArgument="&lt;ctrl name='Log In' role='push button' /&gt;&lt;ctrl name='Log In' role='text' automationid='' check:text='Log In' /&gt;" Guid="7e99b6d6-cd03-4a03-8469-8a58589a0a95" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAC0AAAAYCAYAAABurXSEAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAEgSURBVFhH7ZTdCYMwEICDuI8vLuOTK2QDobiHpY4hOIjoLFfzZ2I8bKLGIuThA5u7y32pZ8g0TfA0ovRdROm7iNJ3YUgP0BQJ5HW/SgjK2EGVpVC2SGyHKO1NeOkRuioDQogEyeUSRvz13peypYcGCjL//pj7bOsdpVmMQJLX0Ks13sDIl8Jp2coadUhf6Vk0yaHu2ZrcIy2hNeqcpMeugmzZSDM0xXIQ9mxv/vP1o9KWA1uzejtJo0Iz/DB8XfwjqzfBOCRt5SNrztIboRlbWo+G5J/Sh8cDkzAJKS1i2IdoNzTrRY3/h+gtra4ZjRa144gMb2DE+dWF5CnOSweANUTG6iwBpZGRuojrpFejIdjcJhcRdjwC8UxpSik8Cwpfq7bbiqG9Z40AAAAASUVORK5CYII=" SearchSteps="Selector, FuzzySelector, Image" />
+                      <uix:Target CVScreenId="fba6f470-3df7-46d9-88d5-20b80d9fe95a" CvElementArea="98, 191, 77, 22" CvTextArea="119, 196, 34, 15" CvTextArgument="Log In" CvType="Button" DesignTimeRectangle="99, 192, 75, 20" ElementType="Button" FullSelectorArgument="&lt;ctrl name='Log In' role='push button' /&gt;" FuzzySelectorArgument="&lt;ctrl name='Log In' role='push button' automationid='' check:text='Log In' /&gt;" Guid="3d423ef8-fec2-457b-b2aa-96baf559c2fc" SearchSteps="Selector, FuzzySelector, CV" />
                     </scg:List>
                   </uix:TargetAnchorable.Anchors>
                 </uix:TargetAnchorable>
               </uix:NClick.Target>
+              <uix:NClick.VerifyOptions>
+                <uix:VerifyExecutionOptions DisplayName="Verification target" Mode="Appears">
+                  <uix:VerifyExecutionOptions.Retry>
+                    <InArgument x:TypeArguments="x:Boolean" />
+                  </uix:VerifyExecutionOptions.Retry>
+                  <uix:VerifyExecutionOptions.Timeout>
+                    <InArgument x:TypeArguments="x:Double" />
+                  </uix:VerifyExecutionOptions.Timeout>
+                </uix:VerifyExecutionOptions>
+              </uix:NClick.VerifyOptions>
             </uix:NClick>
           </Sequence>
         </ActivityAction>

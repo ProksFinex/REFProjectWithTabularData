@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="pq8GZZpqWEi1zmJ8kI6s3w" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" CVScreenId="fba6f470-3df7-46d9-88d5-20b80d9fe95a" CvElementArea="98, 191, 77, 22" CvTextArea="119, 196, 34, 15" CvTextArgument="Log In" CvType="Button" DesignTimeRectangle="120, 194, 33, 16" DesignTimeScaleFactor="1" ElementType="Text" FuzzySelectorArgument="&lt;ctrl name='Log In' role='push button' /&gt;&lt;ctrl role='text' automationid='' /&gt;" Guid="ccc39469-4ed7-4e03-9c6c-fada8f14de28" ScopeSelectorArgument="&lt;wnd app='uidemo.exe' cls='HwndWrapper*' title='UiDemo' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="fba6f470-3df7-46d9-88d5-20b80d9fe95a" CvElementArea="98, 191, 77, 22" CvTextArea="119, 196, 34, 15" CvTextArgument="Log In" CvType="Button" DesignTimeRectangle="99, 192, 75, 20" ElementType="Button" FullSelectorArgument="&lt;ctrl name='Log In' role='push button' /&gt;" FuzzySelectorArgument="&lt;ctrl name='Log In' role='push button' automationid='' check:text='Log In' /&gt;" Guid="3d423ef8-fec2-457b-b2aa-96baf559c2fc" SearchSteps="Selector, FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="f8fed90747ab67635ecf7a1b32933160.png" xmlns="">0nKRxsmHEaEO0LcqcmQmifg</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">None</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>
